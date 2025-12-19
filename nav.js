@@ -1,22 +1,22 @@
-let logo = React.createElement("div", { id: "img-div" });
+const logo = React.createElement("div", { id: "logo" });
 
-let AboutMe = React.createElement("h3", null, "About Me");
-let Portfolio = React.createElement("h3", null, "Portfolio");
-let Services = React.createElement("h3", null, "Services");
-let Blog = React.createElement("h3", null, "Blog");
+const about = React.createElement("h3", null, "About Me");
+const portfolio = React.createElement("h3", null, "Portfolio");
+const services = React.createElement("h3", null, "Services");
+const blog = React.createElement("h3", null, "Blog");
 
-let BookACall = React.createElement("a", null, "Book A Call");
+const call = React.createElement("a", null, "Book A Call");
 
-const navPart = () =>
-  React.createElement("div", { id: "nav-part1" }, [
+const navLeft = () =>
+  React.createElement("div", { id: "nav-left" }, [
     logo,
-    AboutMe,
-    Portfolio,
-    Services,
-    Blog,
+    about,
+    portfolio,
+    services,
+    blog,
   ]);
 
 const nav = () =>
-  React.createElement("nav", null, [navPart(), BookACall]);
+  React.createElement("nav", null, [navLeft(), call]);
 
 export default nav;

@@ -1,48 +1,45 @@
-let h1 = React.createElement("h1", { key: "h1" }, "+200");
-let h4 = React.createElement("h4", { key: "h4" }, "Project completed");
+const countOne = React.createElement("h1", null, "+200");
+const textOne = React.createElement("h4", null, "Project completed");
 
-let h2 = React.createElement("h1", { key: "h2" }, "+50");
-let h5 = React.createElement("h4", { key: "h5" }, "Startup raised");
+const countTwo = React.createElement("h1", null, "+50");
+const textTwo = React.createElement("h4", null, "Startup raised");
 
-let leftTopElm1 = React.createElement(
+const statOne = React.createElement(
   "div",
-  { id: "left-top-elm1", key: "elm1" },
-  [h1, h4]
+  { id: "stat-one" },
+  [countOne, textOne]
 );
 
-let leftTopElm2 = React.createElement(
+const statTwo = React.createElement(
   "div",
-  { id: "left-top-elm2", key: "elm2" },
-  [h2, h5]
+  { id: "stat-two" },
+  [countTwo, textTwo]
 );
 
-let leftTop = () =>
-  React.createElement("div", { id: "left-top" }, [
-    leftTopElm1,
-    leftTopElm2,
-  ]);
+const stats = () =>
+  React.createElement("div", { id: "stats" }, [statOne, statTwo]);
 
-let h3 = React.createElement("h1", { key: "h3" }, "Hello");
-let h6 = React.createElement(
+const title = React.createElement("h1", null, "Hello");
+const subtitle = React.createElement(
   "h4",
-  { key: "h6" },
+  null,
   "- It's D.Nova a design wizard"
 );
 
-let leftCenter = () =>
-  React.createElement("div", { id: "left-center" }, [h3, h6]);
+const heading = () =>
+  React.createElement("div", { id: "heading" }, [title, subtitle]);
 
-let leftBottom = React.createElement(
+const footerText = React.createElement(
   "div",
-  { id: "left-bottom" },
+  { id: "footer-text" },
   "Scroll down ↓"
 );
 
 const left = () =>
-  React.createElement("div", { id: "left" }, [
-    leftTop(),
-    leftCenter(),
-    leftBottom,
+  React.createElement("div", { id: "content" }, [
+    stats(),
+    heading(),
+    footerText,
   ]);
 
 export default left;

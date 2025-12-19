@@ -1,24 +1,24 @@
 import nav from "./nav.js";
 import left from "./left.js";
 
-let a1 = React.createElement("a", { id: "a1" }, "product designer");
-let line = React.createElement("div", { id: "line" });
-let a2 = React.createElement("a", { id: "a2" }, "2025");
+const role = React.createElement("a", { id: "role" }, "product designer");
+const divider = React.createElement("div", { id: "divider" });
+const year = React.createElement("a", { id: "year" }, "2025");
 
-let page1LeftBar = React.createElement(
+const sidebar = React.createElement(
   "div",
-  { id: "page1-leftt" },
-  [a1, line, a2]
+  { id: "sidebar" },
+  [role, divider, year]
 );
 
-let page1Right = React.createElement("div", { id: "page1-right" });
+const image = React.createElement("div", { id: "image" });
 
 const main = () =>
-  React.createElement("div", { id: "page1" }, [
+  React.createElement("div", { id: "container" }, [
     nav(),
-    page1LeftBar,
+    sidebar,
     left(),
-    page1Right,
+    image,
   ]);
 
 export default main;

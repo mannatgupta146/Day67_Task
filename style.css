@@ -2,151 +2,146 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
 }
-html,body{
+
+html, body{
     height: 100%;
     width: 100%;
 }
 
-#page1{
+#container{
+    overflow: hidden;
     height: 100vh;
     width: 100%;
     display: flex;
+    position: relative;
 }
 
+/* NAV */
 nav{
     height: 10vh;
     width: 100%;
-    padding: .4vw 3vw;
+    padding: 0 3vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: absolute;
+    top: 0;
 }
 
-#nav-part1{
-    height: 100%;
+#nav-left{
     width: 30%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-#nav-part1 #img-div{
+#logo{
     height: 2.7vw;
     width: 2.7vw;
     border-radius: 50%;
-    background-image: url(https://react-js-projects-sage.vercel.app/logo.svg);
+    background-image: url(./assets/logo.svg);
     background-size: cover;
     background-position: center;
 }
 
-nav>a{
-    margin-right: 3vw;
-    cursor: pointer;
+nav a{
     font-size: 1.2vw;
+    cursor: pointer;
     border-bottom: 1px solid #111;
 }
 
-#page1-leftt{
+/* SIDEBAR */
+#sidebar{
     margin-top: 10vh;
     width: 8.5%;
     height: 90%;
+    padding: 4vw;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 4vw;
-
-    flex-direction: column;
 }
 
-#page1-leftt #line{
+#divider{
     height: 54vh;
-    width: 8%;
-    background-color: black;
+    width: 2px;
+    background-color: #000;
     opacity: .5;
 }
 
-#page1-leftt a{
+#sidebar a{
     opacity: .5;
     font-weight: 600;
     rotate: 270deg;
     white-space: nowrap;
 }
 
-#page1-leftt #a2{
+#year{
     margin-top: -3vw;
 }
 
-
-#page1 #left{
+/* CONTENT */
+#content{
     margin-top: 10vh;
     height: 90%;
     width: 37%;
 }
 
-#left #left-top{
-    width: 100%;
+#stats{
     padding-top: 5vw;
     display: flex;
-    align-items: center;
     justify-content: center;
     gap: 3vw;
 }
 
-#left-top-elm1{
-    margin-bottom: 2vw;
+#stat-one{
     margin-left: -16vw;
 }
 
-#left-top-elm2{
-    margin-bottom: 2vw;
-}
-
-#left-top h1{
+#stats h1{
     font-size: 3vw;
     font-weight: 200;
     opacity: .8;
-    
 }
 
-#left-top h4{
+#stats h4{
     font-size: .85vw;
     font-weight: 400;
     opacity: .5;
 }
 
-#left #left-center{
-    width: 100%;
+#heading{
     padding-left: 3vw;
-    text-align: start;
 }
 
-#left-center h1{
+#heading h1{
     font-size: 13vw;
     font-weight: 300;
 }
 
-#left-center h4{
+#heading h4{
     font-size: 1.4vw;
     margin-top: -2vw;
     font-weight: 400;
 }
 
-#left #left-bottom{
-    width: 100%;
+#footer-text{
     padding-top: 10vw;
     padding-left: 3vw;
     font-size: 1.3vw;
     opacity: .6;
 }
 
-#page1 #page1-right{
+/* IMAGE */
+#image{
     margin-top: 10vh;
-    height: 90%;
-    width: 53%;
-    background-image: url(https://react-proj01-c67-sheryians.vercel.app/model0-r0.png);
+    height: 100%;
+    width: 47%;
+    background-image: url(./assets/model.png);
     background-size: cover;
-    background-position: 0 -14px; 
+    background-position: center;
 }
