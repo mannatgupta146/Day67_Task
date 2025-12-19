@@ -1,5 +1,4 @@
 import main from "./main.js";
 
-const root = ReactDOM.createRoot(document.querySelector("main"))
-
-root.render(main())
+const root = ReactDOM.createRoot(document.getElementById("main"));
+root.render(main());
