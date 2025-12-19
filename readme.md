@@ -1,86 +1,61 @@
 # Day 67 Task | Cohort 2.0
 
-This repository contains all the JavaScript exercises completed as part of **Day 63** in **Sheryians Coding School Cohort 2.0**.  
-The focus of this day was to understand **Promises**, **async/await**, **Error Handling**, and handling **parallel asynchronous operations** in JavaScript.
+This repository contains the work completed as part of **Day 67** in **Sheryians Coding School Cohort 2.0**.  
+The focus of this day was to understand **React fundamentals without JSX**, building UI using `React.createElement()`, and structuring components cleanly using plain JavaScript.
 
-All exercises are written inside **one single JavaScript file** and are **console-based** (no HTML).
+## 🖼️ Design Comparison
 
+### 🔹 Original Design
+![Original Design](./assets/original.png)
 
-## 📁 File in This Task
+### 🔹 Created UI
+![Created UI](./assets/created.png)
 
-### 📌 day63.js — All Promise & Async Scenarios (Single File)
+This comparison shows how the original reference design was translated into a fully functional UI using **React without JSX**.
 
+## 🧩 Features Implemented
 
-## 🧠 Topics Covered
-
-| Topic | Description |
-|------|-------------|
-| Promises | Creating and handling asynchronous operations |
-| async / await | Writing asynchronous code in a synchronous style |
-| Error Handling | Using `try / catch` to handle runtime and API errors |
-| Custom Errors | Creating and throwing custom error classes |
-| Parallel Execution | Running multiple async tasks at the same time |
-| Promise.all | Handling multiple promises with fail-fast behavior |
-| Promise.allSettled | Tracking both success and failure results |
-| finally Block | Running cleanup code regardless of outcome |
-| Async Flow Chaining | Combining multiple async operations |
-
-
-## 🧩 Scenarios Included
-
-### ✔️ Scenario 1 — Weather Dashboard with Error Handling
-- Fetch weather data using a public API  
-- Uses `async/await` with `fetch`  
-- Handles invalid city and network errors  
-- Throws a custom `ExtremeTemperatureError`  
+| Feature | Description |
+|--------|-------------|
+| 🧭 Navigation Bar | Logo, navigation links, and call-to-action button |
+| 📌 Sidebar | Rotated text, vertical divider, year and role display |
+| 📊 Statistics Section | Project and startup count display |
+| 📝 Main Heading | Large hero text with subtitle |
+| 👇 Scroll Indicator | Visual hint to scroll down |
+| 🖼️ Visual Section | Right-side image-based layout |
+| 📱 Responsive Layout | Flexbox-based structure |
+| 🗂️ Asset Usage | Local images used via CSS |
 
 
-### ✔️ Scenario 2 — Bulk Email Sending Simulation
-- Simulates sending emails to 5 users  
-- Each email operation is treated as a Promise  
-- Emails are sent in parallel  
-- Shows both success and failure cases  
-- Uses `finally` to indicate completion  
-
-
-### ✔️ Scenario 3 — Combined Async Dashboard (Optional)
-- Fetches weather data first  
-- Sends report emails after weather validation  
-- Demonstrates error handling across async flows  
-- Ensures completion using `finally`  
-
-
-# ✨ Key Learning Highlights
+## ✨ Key Learning Highlights
 
 You learned to:
-- Handle asynchronous operations using Promises  
-- Use `async/await` for cleaner code  
-- Implement robust error handling  
-- Execute multiple Promises in parallel  
-- Track success and failure together  
-- Design clean async workflows  
+- Build React apps without JSX  
+- Understand how JSX translates to `React.createElement()`  
+- Structure components in separate files  
+- Maintain clean and simple ID naming  
+- Apply CSS efficiently to React-rendered elements  
+- Manage layout using Flexbox  
 
 
-# 🛠️ Technologies Used
+## 🛠️ Technologies Used
 - **JavaScript (ES6+)**  
-- Promises  
-- `async / await`  
-- `fetch` API  
-- `setTimeout()`  
-- Browser Console  
+- **React 18 (CDN)**  
+- **ReactDOM**  
+- **HTML5**  
+- **CSS3**  
 
 
-# 📖 Learning Outcome
+## 📖 Learning Outcome
 
-By completing Day 63, I understood:
-- How asynchronous execution works in JavaScript  
-- How to handle API and runtime errors  
-- How parallel async tasks are managed  
-- Why custom errors are useful  
-- How `finally` ensures cleanup  
+By completing Day 67, I understood:
+- Core working of React without abstractions  
+- How React renders elements internally  
+- How to structure a UI using pure JavaScript  
+- Importance of clean naming and layout organization  
 
 
-# 🌟 Acknowledgement
+## 🌟 Acknowledgement
 
 This task was completed under the guidance of **Harsh Bhaiya**  
 as part of **Sheryians Coding School – Cohort 2.0**.
